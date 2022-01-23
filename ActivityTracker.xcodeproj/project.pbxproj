@@ -11,6 +11,9 @@
 		FF700017279D9A760021488D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF700016279D9A760021488D /* ContentView.swift */; };
 		FF700019279D9A780021488D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF700018279D9A780021488D /* Assets.xcassets */; };
 		FF70001C279D9A780021488D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF70001B279D9A780021488D /* Preview Assets.xcassets */; };
+		FF700024279DA15B0021488D /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF700022279DA15B0021488D /* Main.xcdatamodeld */; };
+		FF700026279DA54E0021488D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF700025279DA54E0021488D /* DataController.swift */; };
+		FF70002B279DB6100021488D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF70002A279DB6100021488D /* CloudKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,11 @@
 		FF700016279D9A760021488D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FF700018279D9A780021488D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF70001B279D9A780021488D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FF700023279DA15B0021488D /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		FF700025279DA54E0021488D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		FF700027279DB5E20021488D /* ActivityTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActivityTracker.entitlements; sourceTree = "<group>"; };
+		FF700028279DB5ED0021488D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF70002A279DB6100021488D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF70002B279DB6100021488D /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -37,6 +46,7 @@
 			children = (
 				FF700013279D9A760021488D /* ActivityTracker */,
 				FF700012279D9A760021488D /* Products */,
+				FF700029279DB6100021488D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,8 +61,12 @@
 		FF700013279D9A760021488D /* ActivityTracker */ = {
 			isa = PBXGroup;
 			children = (
+				FF700028279DB5ED0021488D /* Info.plist */,
+				FF700027279DB5E20021488D /* ActivityTracker.entitlements */,
 				FF700014279D9A760021488D /* ActivityTrackerApp.swift */,
 				FF700016279D9A760021488D /* ContentView.swift */,
+				FF700025279DA54E0021488D /* DataController.swift */,
+				FF700022279DA15B0021488D /* Main.xcdatamodeld */,
 				FF700018279D9A780021488D /* Assets.xcassets */,
 				FF70001A279D9A780021488D /* Preview Content */,
 			);
@@ -65,6 +79,14 @@
 				FF70001B279D9A780021488D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FF700029279DB6100021488D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FF70002A279DB6100021488D /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +159,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF700024279DA15B0021488D /* Main.xcdatamodeld in Sources */,
+				FF700026279DA54E0021488D /* DataController.swift in Sources */,
 				FF700017279D9A760021488D /* ContentView.swift in Sources */,
 				FF700015279D9A760021488D /* ActivityTrackerApp.swift in Sources */,
 			);
@@ -266,12 +290,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ActivityTracker/ActivityTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ActivityTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 59PKSR6X25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActivityTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -295,12 +321,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = ActivityTracker/ActivityTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ActivityTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 59PKSR6X25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = ActivityTracker/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -341,6 +369,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FF700022279DA15B0021488D /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FF700023279DA15B0021488D /* Main.xcdatamodel */,
+			);
+			currentVersion = FF700023279DA15B0021488D /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = FF700009279D9A750021488D /* Project object */;
 }
