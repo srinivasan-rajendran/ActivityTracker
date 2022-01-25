@@ -14,6 +14,8 @@
 		FF700024279DA15B0021488D /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FF700022279DA15B0021488D /* Main.xcdatamodeld */; };
 		FF700026279DA54E0021488D /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF700025279DA54E0021488D /* DataController.swift */; };
 		FF70002B279DB6100021488D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF70002A279DB6100021488D /* CloudKit.framework */; };
+		FFD0695427A079C5003AFE2B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0695327A079C5003AFE2B /* HomeView.swift */; };
+		FFD0695627A07A94003AFE2B /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0695527A07A94003AFE2B /* ProjectsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +29,8 @@
 		FF700027279DB5E20021488D /* ActivityTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActivityTracker.entitlements; sourceTree = "<group>"; };
 		FF700028279DB5ED0021488D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		FF70002A279DB6100021488D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		FFD0695327A079C5003AFE2B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		FFD0695527A07A94003AFE2B /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				FF700014279D9A760021488D /* ActivityTrackerApp.swift */,
 				FF700016279D9A760021488D /* ContentView.swift */,
 				FF700025279DA54E0021488D /* DataController.swift */,
+				FFD0695327A079C5003AFE2B /* HomeView.swift */,
+				FFD0695527A07A94003AFE2B /* ProjectsView.swift */,
 				FF700022279DA15B0021488D /* Main.xcdatamodeld */,
 				FF700018279D9A780021488D /* Assets.xcassets */,
 				FF70001A279D9A780021488D /* Preview Content */,
@@ -159,9 +165,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD0695627A07A94003AFE2B /* ProjectsView.swift in Sources */,
 				FF700024279DA15B0021488D /* Main.xcdatamodeld in Sources */,
 				FF700026279DA54E0021488D /* DataController.swift in Sources */,
 				FF700017279D9A760021488D /* ContentView.swift in Sources */,
+				FFD0695427A079C5003AFE2B /* HomeView.swift in Sources */,
 				FF700015279D9A760021488D /* ActivityTrackerApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
