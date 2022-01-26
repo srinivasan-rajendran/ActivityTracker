@@ -16,6 +16,8 @@
 		FF70002B279DB6100021488D /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF70002A279DB6100021488D /* CloudKit.framework */; };
 		FFD0695427A079C5003AFE2B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0695327A079C5003AFE2B /* HomeView.swift */; };
 		FFD0695627A07A94003AFE2B /* ProjectsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0695527A07A94003AFE2B /* ProjectsView.swift */; };
+		FFD0695827A1533D003AFE2B /* Item+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0695727A1533D003AFE2B /* Item+CoreDataHelpers.swift */; };
+		FFD0695A27A15B92003AFE2B /* Project+CoreDataHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD0695927A15B92003AFE2B /* Project+CoreDataHelpers.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		FF70002A279DB6100021488D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FFD0695327A079C5003AFE2B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		FFD0695527A07A94003AFE2B /* ProjectsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectsView.swift; sourceTree = "<group>"; };
+		FFD0695727A1533D003AFE2B /* Item+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Item+CoreDataHelpers.swift"; sourceTree = "<group>"; };
+		FFD0695927A15B92003AFE2B /* Project+CoreDataHelpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Project+CoreDataHelpers.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 				FF700028279DB5ED0021488D /* Info.plist */,
 				FF700027279DB5E20021488D /* ActivityTracker.entitlements */,
 				FF700014279D9A760021488D /* ActivityTrackerApp.swift */,
+				FFD0695727A1533D003AFE2B /* Item+CoreDataHelpers.swift */,
+				FFD0695927A15B92003AFE2B /* Project+CoreDataHelpers.swift */,
 				FF700016279D9A760021488D /* ContentView.swift */,
 				FF700025279DA54E0021488D /* DataController.swift */,
 				FFD0695327A079C5003AFE2B /* HomeView.swift */,
@@ -165,12 +171,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FFD0695A27A15B92003AFE2B /* Project+CoreDataHelpers.swift in Sources */,
 				FFD0695627A07A94003AFE2B /* ProjectsView.swift in Sources */,
 				FF700024279DA15B0021488D /* Main.xcdatamodeld in Sources */,
 				FF700026279DA54E0021488D /* DataController.swift in Sources */,
 				FF700017279D9A760021488D /* ContentView.swift in Sources */,
 				FFD0695427A079C5003AFE2B /* HomeView.swift in Sources */,
 				FF700015279D9A760021488D /* ActivityTrackerApp.swift in Sources */,
+				FFD0695827A1533D003AFE2B /* Item+CoreDataHelpers.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
