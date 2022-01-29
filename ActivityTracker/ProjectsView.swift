@@ -34,7 +34,7 @@ struct ProjectsView: View {
                             ItemRowView(item: item)
                         }
                     } header: {
-                        Text(project.projectTitle)
+                        ProjectHeaderView(project: project)
                     }
 
                 }
