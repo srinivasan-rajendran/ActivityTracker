@@ -9,7 +9,7 @@ import Foundation
 
 extension Item {
     var itemTitle: String {
-        title ?? ""
+        title ?? "New Item"
     }
 
     var itemDetail: String {
@@ -26,7 +26,7 @@ extension Item {
 
         let item = Item(context: viewContext)
         item.title = "Example Item"
-        item.detail = "THis is an example item"
+        item.detail = "This is an example item"
         item.priority = 3
         item.creationDate = Date()
 
