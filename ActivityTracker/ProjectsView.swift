@@ -36,7 +36,7 @@ struct ProjectsView: View {
             List {
                 ForEach(projects.wrappedValue) { project in
                     Section {
-                        ForEach(items(for: project)) { item in
+                        ForEach(project.projectItems(using: sortOrder)) { item in
                             ItemRowView(item: item)
                         }
                         .onDelete { offsets in
@@ -101,17 +101,6 @@ struct ProjectsView: View {
                                 .default(Text("Title")) { sortOrder = .title }
                             ])
             }
-        }
-    }
-
-    func items(for project: Project) -> [Item] {
-        switch sortOrder {
-        case .title:
-            return project.projectItems.sorted(by: \.itemTitle)
-        case .creationDate:
-            return project.projectItems.sorted(by: \.itemCreationDate)
-        case .optimized:
-            return project.projectItemsDefaultSorted
         }
     }
 }

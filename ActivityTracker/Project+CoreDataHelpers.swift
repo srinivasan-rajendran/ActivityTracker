@@ -49,6 +49,18 @@ extension Project {
         }
     }
 
+
+    func projectItems(using sortOrder: Item.SortOrder) -> [Item] {
+        switch sortOrder {
+        case .title:
+            return projectItems.sorted(by: \.itemTitle)
+        case .creationDate:
+            return projectItems.sorted(by: \.itemCreationDate)
+        case .optimized:
+            return projectItemsDefaultSorted
+        }
+    }
+
     var completionAmount: Double {
         let originalItems = projectItems
         guard originalItems.isEmpty == false else { return 0 }
