@@ -74,7 +74,7 @@ struct ProjectsView: View {
                     .listStyle(InsetGroupedListStyle())
                 }
             }
-            .navigationTitle(showClosedProjects ? "ClosedProjects" : "Open Projects")
+            .navigationTitle(showClosedProjects ? "Closed Projects" : "Open Projects")
             .toolbar {
                 ToolbarItem(placement: .navigationBarTrailing) {
                     if showClosedProjects == false {
