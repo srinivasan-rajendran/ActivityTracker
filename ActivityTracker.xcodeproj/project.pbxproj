@@ -33,6 +33,8 @@
 		FFEACB7727A594A40064FA70 /* ProjectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEACB7627A594A40064FA70 /* ProjectHeaderView.swift */; };
 		FFEACB7927A597C10064FA70 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FFEACB7827A597C10064FA70 /* Colors.xcassets */; };
 		FFEACB7B27A599360064FA70 /* EditProjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFEACB7A27A599360064FA70 /* EditProjectView.swift */; };
+		FFF6092727B7EDDF00E4E47E /* ItemListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6092627B7EDDF00E4E47E /* ItemListView.swift */; };
+		FFF6092927B7EEC600E4E47E /* ProjectSummaryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFF6092827B7EEC600E4E47E /* ProjectSummaryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,6 +70,8 @@
 		FFEACB7627A594A40064FA70 /* ProjectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectHeaderView.swift; sourceTree = "<group>"; };
 		FFEACB7827A597C10064FA70 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		FFEACB7A27A599360064FA70 /* EditProjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProjectView.swift; sourceTree = "<group>"; };
+		FFF6092627B7EDDF00E4E47E /* ItemListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemListView.swift; sourceTree = "<group>"; };
+		FFF6092827B7EEC600E4E47E /* ProjectSummaryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSummaryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +114,8 @@
 				FFEACB7827A597C10064FA70 /* Colors.xcassets */,
 				FFD0695727A1533D003AFE2B /* Item+CoreDataHelpers.swift */,
 				FFD0695927A15B92003AFE2B /* Project+CoreDataHelpers.swift */,
+				FFF6092627B7EDDF00E4E47E /* ItemListView.swift */,
+				FFF6092827B7EEC600E4E47E /* ProjectSummaryView.swift */,
 				FF700016279D9A760021488D /* ContentView.swift */,
 				FFD0E0E327A57A50007DBD2C /* EditItemView.swift */,
 				FF700025279DA54E0021488D /* DataController.swift */,
@@ -225,6 +231,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FFD0695A27A15B92003AFE2B /* Project+CoreDataHelpers.swift in Sources */,
+				FFF6092927B7EEC600E4E47E /* ProjectSummaryView.swift in Sources */,
 				FFEACB7727A594A40064FA70 /* ProjectHeaderView.swift in Sources */,
 				FF74F4AA27AFF41E00C0F254 /* AwardsView.swift in Sources */,
 				FFD0695627A07A94003AFE2B /* ProjectsView.swift in Sources */,
@@ -239,6 +246,7 @@
 				FFEACB7527A58C430064FA70 /* Binding+Extension.swift in Sources */,
 				FF343BCF27A9BB250069D424 /* Sequence+Sorting.swift in Sources */,
 				FFD0695427A079C5003AFE2B /* HomeView.swift in Sources */,
+				FFF6092727B7EDDF00E4E47E /* ItemListView.swift in Sources */,
 				FF700015279D9A760021488D /* ActivityTrackerApp.swift in Sources */,
 				FF74F4AC27B0570800C0F254 /* Color+Extensions.swift in Sources */,
 				FFD0695827A1533D003AFE2B /* Item+CoreDataHelpers.swift in Sources */,
