@@ -47,7 +47,7 @@
 		FF700023279DA15B0021488D /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
 		FF700025279DA54E0021488D /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		FF700027279DB5E20021488D /* ActivityTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ActivityTracker.entitlements; sourceTree = "<group>"; };
-		FF700028279DB5ED0021488D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FF700028279DB5ED0021488D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FF70002A279DB6100021488D /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		FF74F4A127AFE18100C0F254 /* SelectSomethingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectSomethingView.swift; sourceTree = "<group>"; };
 		FF74F4A327AFED8700C0F254 /* Bundle+Decodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Decodable.swift"; sourceTree = "<group>"; };
@@ -106,34 +106,13 @@
 		FF700013279D9A760021488D /* ActivityTracker */ = {
 			isa = PBXGroup;
 			children = (
-				FF700028279DB5ED0021488D /* Info.plist */,
-				FF700027279DB5E20021488D /* ActivityTracker.entitlements */,
-				FF700014279D9A760021488D /* ActivityTrackerApp.swift */,
-				FFEACB7627A594A40064FA70 /* ProjectHeaderView.swift */,
-				FFEACB7A27A599360064FA70 /* EditProjectView.swift */,
-				FFEACB7827A597C10064FA70 /* Colors.xcassets */,
-				FFD0695727A1533D003AFE2B /* Item+CoreDataHelpers.swift */,
-				FFD0695927A15B92003AFE2B /* Project+CoreDataHelpers.swift */,
-				FFF6092627B7EDDF00E4E47E /* ItemListView.swift */,
-				FFF6092827B7EEC600E4E47E /* ProjectSummaryView.swift */,
-				FF700016279D9A760021488D /* ContentView.swift */,
-				FFD0E0E327A57A50007DBD2C /* EditItemView.swift */,
-				FF700025279DA54E0021488D /* DataController.swift */,
-				FFD0695327A079C5003AFE2B /* HomeView.swift */,
-				FFD0695527A07A94003AFE2B /* ProjectsView.swift */,
-				FF74F4A327AFED8700C0F254 /* Bundle+Decodable.swift */,
-				FF74F4A927AFF41E00C0F254 /* AwardsView.swift */,
-				FF74F4AB27B0570800C0F254 /* Color+Extensions.swift */,
-				FFA815E027B30389003AE177 /* Localizable.strings */,
-				FFA815E427B30430003AE177 /* Localizable.stringsdict */,
-				FF74F4A727AFF22C00C0F254 /* Awards.swift */,
-				FF343BCE27A9BB250069D424 /* Sequence+Sorting.swift */,
-				FFEACB7427A58C430064FA70 /* Binding+Extension.swift */,
-				FFEACB7227A589520064FA70 /* ItemRowView.swift */,
-				FF74F4A127AFE18100C0F254 /* SelectSomethingView.swift */,
-				FFA815E827B304EC003AE177 /* Awards.json */,
-				FF700022279DA15B0021488D /* Main.xcdatamodeld */,
+				FFDDA87127BC3A110076B59F /* Configuration */,
+				FFDDA86E27BC39790076B59F /* Views */,
+				FFDDA86F27BC39B60076B59F /* Extensions */,
+				FFDDA87227BC3A850076B59F /* Models */,
+				FFDDA87027BC39D00076B59F /* Localization */,
 				FF700018279D9A780021488D /* Assets.xcassets */,
+				FFEACB7827A597C10064FA70 /* Colors.xcassets */,
 				FF70001A279D9A780021488D /* Preview Content */,
 			);
 			path = ActivityTracker;
@@ -153,6 +132,67 @@
 				FF70002A279DB6100021488D /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FFDDA86E27BC39790076B59F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FF700014279D9A760021488D /* ActivityTrackerApp.swift */,
+				FFEACB7627A594A40064FA70 /* ProjectHeaderView.swift */,
+				FF700016279D9A760021488D /* ContentView.swift */,
+				FFEACB7A27A599360064FA70 /* EditProjectView.swift */,
+				FFF6092627B7EDDF00E4E47E /* ItemListView.swift */,
+				FFF6092827B7EEC600E4E47E /* ProjectSummaryView.swift */,
+				FFD0E0E327A57A50007DBD2C /* EditItemView.swift */,
+				FFD0695327A079C5003AFE2B /* HomeView.swift */,
+				FFD0695527A07A94003AFE2B /* ProjectsView.swift */,
+				FF74F4A927AFF41E00C0F254 /* AwardsView.swift */,
+				FFEACB7227A589520064FA70 /* ItemRowView.swift */,
+				FF74F4A127AFE18100C0F254 /* SelectSomethingView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FFDDA86F27BC39B60076B59F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				FFD0695727A1533D003AFE2B /* Item+CoreDataHelpers.swift */,
+				FFD0695927A15B92003AFE2B /* Project+CoreDataHelpers.swift */,
+				FF74F4A327AFED8700C0F254 /* Bundle+Decodable.swift */,
+				FF74F4AB27B0570800C0F254 /* Color+Extensions.swift */,
+				FF343BCE27A9BB250069D424 /* Sequence+Sorting.swift */,
+				FFEACB7427A58C430064FA70 /* Binding+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		FFDDA87027BC39D00076B59F /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				FFA815E827B304EC003AE177 /* Awards.json */,
+				FFA815E027B30389003AE177 /* Localizable.strings */,
+				FFA815E427B30430003AE177 /* Localizable.stringsdict */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		FFDDA87127BC3A110076B59F /* Configuration */ = {
+			isa = PBXGroup;
+			children = (
+				FF700028279DB5ED0021488D /* Info.plist */,
+				FF700027279DB5E20021488D /* ActivityTracker.entitlements */,
+				FF700022279DA15B0021488D /* Main.xcdatamodeld */,
+			);
+			path = Configuration;
+			sourceTree = "<group>";
+		};
+		FFDDA87227BC3A850076B59F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FF700025279DA54E0021488D /* DataController.swift */,
+				FF74F4A727AFF22C00C0F254 /* Awards.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -408,14 +448,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ActivityTracker/ActivityTracker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ActivityTracker/Configuration/ActivityTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ActivityTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 59PKSR6X25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ActivityTracker/Info.plist;
+				INFOPLIST_FILE = ActivityTracker/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -439,14 +479,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = ActivityTracker/ActivityTracker.entitlements;
+				CODE_SIGN_ENTITLEMENTS = ActivityTracker/Configuration/ActivityTracker.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ActivityTracker/Preview Content\"";
 				DEVELOPMENT_TEAM = 59PKSR6X25;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = ActivityTracker/Info.plist;
+				INFOPLIST_FILE = ActivityTracker/Configuration/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
