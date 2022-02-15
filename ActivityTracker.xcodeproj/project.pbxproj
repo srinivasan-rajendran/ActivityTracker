@@ -106,11 +106,13 @@
 		FF700013279D9A760021488D /* ActivityTracker */ = {
 			isa = PBXGroup;
 			children = (
+				FFDDA87327BC3B2D0076B59F /* Activites */,
 				FFDDA87127BC3A110076B59F /* Configuration */,
-				FFDDA86E27BC39790076B59F /* Views */,
 				FFDDA86F27BC39B60076B59F /* Extensions */,
 				FFDDA87227BC3A850076B59F /* Models */,
 				FFDDA87027BC39D00076B59F /* Localization */,
+				FF700014279D9A760021488D /* ActivityTrackerApp.swift */,
+				FF700016279D9A760021488D /* ContentView.swift */,
 				FF700018279D9A780021488D /* Assets.xcassets */,
 				FFEACB7827A597C10064FA70 /* Colors.xcassets */,
 				FF70001A279D9A780021488D /* Preview Content */,
@@ -134,33 +136,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		FFDDA86E27BC39790076B59F /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				FF700014279D9A760021488D /* ActivityTrackerApp.swift */,
-				FFEACB7627A594A40064FA70 /* ProjectHeaderView.swift */,
-				FF700016279D9A760021488D /* ContentView.swift */,
-				FFEACB7A27A599360064FA70 /* EditProjectView.swift */,
-				FFF6092627B7EDDF00E4E47E /* ItemListView.swift */,
-				FFF6092827B7EEC600E4E47E /* ProjectSummaryView.swift */,
-				FFD0E0E327A57A50007DBD2C /* EditItemView.swift */,
-				FFD0695327A079C5003AFE2B /* HomeView.swift */,
-				FFD0695527A07A94003AFE2B /* ProjectsView.swift */,
-				FF74F4A927AFF41E00C0F254 /* AwardsView.swift */,
-				FFEACB7227A589520064FA70 /* ItemRowView.swift */,
-				FF74F4A127AFE18100C0F254 /* SelectSomethingView.swift */,
-			);
-			path = Views;
-			sourceTree = "<group>";
-		};
 		FFDDA86F27BC39B60076B59F /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				FFD0695727A1533D003AFE2B /* Item+CoreDataHelpers.swift */,
-				FFD0695927A15B92003AFE2B /* Project+CoreDataHelpers.swift */,
 				FF74F4A327AFED8700C0F254 /* Bundle+Decodable.swift */,
 				FF74F4AB27B0570800C0F254 /* Color+Extensions.swift */,
+				FFD0695727A1533D003AFE2B /* Item+CoreDataHelpers.swift */,
 				FF343BCE27A9BB250069D424 /* Sequence+Sorting.swift */,
+				FFD0695927A15B92003AFE2B /* Project+CoreDataHelpers.swift */,
 				FFEACB7427A58C430064FA70 /* Binding+Extension.swift */,
 			);
 			path = Extensions;
@@ -193,6 +176,47 @@
 				FF74F4A727AFF22C00C0F254 /* Awards.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		FFDDA87327BC3B2D0076B59F /* Activites */ = {
+			isa = PBXGroup;
+			children = (
+				FFDDA87627BC3B4A0076B59F /* Awards */,
+				FFDDA87527BC3B400076B59F /* Projects */,
+				FFDDA87427BC3B3A0076B59F /* Home */,
+			);
+			path = Activites;
+			sourceTree = "<group>";
+		};
+		FFDDA87427BC3B3A0076B59F /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				FFD0695327A079C5003AFE2B /* HomeView.swift */,
+				FFF6092627B7EDDF00E4E47E /* ItemListView.swift */,
+				FFF6092827B7EEC600E4E47E /* ProjectSummaryView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		FFDDA87527BC3B400076B59F /* Projects */ = {
+			isa = PBXGroup;
+			children = (
+				FFD0695527A07A94003AFE2B /* ProjectsView.swift */,
+				FF74F4A127AFE18100C0F254 /* SelectSomethingView.swift */,
+				FFEACB7627A594A40064FA70 /* ProjectHeaderView.swift */,
+				FFEACB7227A589520064FA70 /* ItemRowView.swift */,
+				FFEACB7A27A599360064FA70 /* EditProjectView.swift */,
+				FFD0E0E327A57A50007DBD2C /* EditItemView.swift */,
+			);
+			path = Projects;
+			sourceTree = "<group>";
+		};
+		FFDDA87627BC3B4A0076B59F /* Awards */ = {
+			isa = PBXGroup;
+			children = (
+				FF74F4A927AFF41E00C0F254 /* AwardsView.swift */,
+			);
+			path = Awards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
