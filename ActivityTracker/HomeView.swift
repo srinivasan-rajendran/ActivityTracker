@@ -27,7 +27,7 @@ struct HomeView: View {
 
     init() {
         let request: NSFetchRequest<Item> = Item.fetchRequest()
-        request.predicate = NSPredicate(format: "completed = false")
+        request.predicate = NSPredicate(format: "completed = false AND project.closed = false")
 
         request.sortDescriptors = [
             NSSortDescriptor(keyPath: \Item.priority, ascending: false)
@@ -56,6 +56,12 @@ struct HomeView: View {
             }
             .background(Color.systemGroupedBackground.ignoresSafeArea())
             .navigationTitle("Home")
+            .toolbar {
+                Button("Add Data") {
+                    dataController.deleteAll()
+                    try? dataController.createSampleData()
+                }
+            }
         }
     }
 }
@@ -65,8 +71,3 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
-
-//                Button("Add Data") {
-//                    dataController.deleteAll()
-//                    try? dataController.createSampleData()
-//                }

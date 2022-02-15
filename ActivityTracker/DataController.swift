@@ -8,6 +8,9 @@
 import CoreData
 import SwiftUI
 
+
+/// An environment singleton respomnsible for managing core data stack, including saving,
+/// counting fetch requests and sample data
 class DataController: ObservableObject {
     let container: NSPersistentCloudKitContainer
 
